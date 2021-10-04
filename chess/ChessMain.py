@@ -63,8 +63,8 @@ def main():
             elif e.type == p.KEYDOWN:
                 if e.key == p.K_z: # Undo the last Move
                     log = gs.castleRightsLog[-1]
-                    print(len(gs.castleRightsLog))
-                    print(log.wks, log.wqs, log.bks, log.bqs)
+                    #print(len(gs.castleRightsLog))
+                    #print(log.wks, log.wqs, log.bks, log.bqs)
                     gs.undoMove()
                     log = gs.castleRightsLog[-1]
                     print(log.wks, log.wqs, log.bks, log.bqs)
